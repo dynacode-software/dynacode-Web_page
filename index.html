@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DYNACODE — Transformamos ideas en código</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- CSS modular: cada archivo tiene una única responsabilidad -->
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/sections.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<button class="theme-toggle" id="themeToggle" aria-label="Cambiar entre modo claro y oscuro">
+  <svg class="sun" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+  <svg class="moon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path></svg>
+</button>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Software development</span>
+      <h1 class="logo-wordmark">DYNA<span class="code">CODE</span></h1>
+      <p class="hero-quote">"Transformamos ideas en código."</p>
+      <p class="hero-desc">Convertimos ideas y necesidades en soluciones de software funcionales, intuitivas y de calidad — con buenas prácticas y tecnologías apropiadas.</p>
+      <div class="btn-row">
+        <button class="btn btn-primary">Conoce DYNACODE</button>
+        <button class="btn btn-ghost">Contáctanos</button>
+      </div>
+      <div class="stat-row">
+        <div class="stat">
+          <div class="num">100% <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"></path></svg></div>
+          <div class="lbl">Orientados al cliente</div>
+        </div>
+        <div class="stat">
+          <div class="num">∞</div>
+          <div class="lbl">Calidad primero</div>
+        </div>
+        <div class="stat">
+          <div class="num">∞</div>
+          <div class="lbl">Innovación continua</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mock-wrap">
+      <div class="mock-blob"></div>
+      <div class="browser-card">
+        <div class="check-pill">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          Listo
+        </div>
+        <div class="browser-bar">
+          <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+        </div>
+        <div class="browser-body">
+          <div class="line w1"></div>
+          <div class="line w2"></div>
+          <div class="line w3"></div>
+          <span class="tag-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
+            ideas
+          </span>
+          <br>
+          <span class="tag-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
+            software
+          </span>
+        </div>
+        <div class="bottom-bar">
+          <div class="track"></div>
+          <div class="knob"></div>
+        </div>
+      </div>
+      <div class="dot-grid"></div>
+    </div>
+  </div>
+</section>
+
+<!-- QUIENES SOMOS -->
+<section class="section bg-1" id="nosotros">
+  <div class="wrap">
+    <span class="eyebrow">Quiénes somos</span>
+    <h2 class="section-title">¿Quiénes somos?</h2>
+
+    <div class="about-grid">
+      <div class="about-mock">
+        <div class="browser-card" style="max-width:320px;">
+          <div class="check-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          </div>
+          <div class="browser-bar">
+            <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+          </div>
+          <div class="browser-body">
+            <div class="line w2"></div>
+            <div class="line w1"></div>
+            <div class="line w3"></div>
+          </div>
+          <div class="input-row">
+            <div class="track"></div>
+            <div class="round-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+          </div>
+        </div>
+        <div class="chat-bubble c1"><span class="avatar"></span>Idea</div>
+        <div class="chat-bubble c2"><span class="avatar"></span>Solución</div>
+        <div class="dot-grid" style="left:-4px; bottom:-30px;"></div>
+      </div>
+
+      <div class="about-text">
+        <p>DYNACODE es un grupo emprendedor orientado al desarrollo de soluciones de software. Nuestro propósito es transformar las ideas y necesidades de nuestros usuarios y clientes en soluciones que aporten valor real, utilizando buenas prácticas de desarrollo, tecnologías apropiadas y un enfoque orientado a la calidad.</p>
+
+        <div class="info-card">
+          <div class="info-card-head">
+            <span class="icon-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="4"></circle><circle cx="12" cy="12" r="0.5"></circle></svg>
+            </span>
+            Misión
+          </div>
+          <p>Desarrollar soluciones de software que transformen las ideas y necesidades de nuestros clientes en productos tecnológicos funcionales, intuitivos y de calidad.</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-head">
+            <span class="icon-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7Z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+            </span>
+            Visión
+          </div>
+          <p>Ser una empresa reconocida a nivel nacional por el desarrollo de soluciones de software innovadoras y de calidad, adaptándose a las necesidades de nuestros clientes e incorporando nuevas tecnologías.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NUESTRAS SOLUCIONES -->
+<section class="section bg-2" id="soluciones">
+  <div class="wrap">
+    <div class="center" style="max-width:560px;">
+      <span class="eyebrow">Lo que hacemos</span>
+      <h2 class="section-title">Nuestras soluciones</h2>
+      <p class="section-sub center">Abordamos los desafíos tecnológicos de nuestros clientes con un enfoque integral y orientado a resultados.</p>
+    </div>
+
+    <div class="grid-4">
+      <div class="feature-card">
+        <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></span>
+        <h3>Desarrollo de software</h3>
+        <p>Soluciones tecnológicas orientadas a las necesidades específicas de cada cliente, construidas con buenas prácticas y estándares de calidad.</p>
+      </div>
+      <div class="feature-card">
+        <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="13" rx="2"></rect><path d="M8 21h8M12 17v4"></path></svg></span>
+        <h3>Soluciones digitales</h3>
+        <p>Transformación de ideas y necesidades en productos tecnológicos funcionales que generan valor real para los usuarios y el negocio.</p>
+      </div>
+      <div class="feature-card">
+        <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"></path></svg></span>
+        <h3>Desarrollo orientado al usuario</h3>
+        <p>Productos intuitivos y pensados para las necesidades reales de los usuarios, priorizando la experiencia y la usabilidad.</p>
+      </div>
+      <div class="feature-card">
+        <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 11 14 11 22 21 10 13 10 13 2"></polygon></svg></span>
+        <h3>Innovación tecnológica</h3>
+        <p>Incorporación de tecnologías apropiadas para generar soluciones de calidad, manteniéndonos actualizados con el ecosistema tecnológico.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NUESTROS VALORES -->
+<section class="section bg-1" id="valores">
+  <div class="wrap">
+    <span class="eyebrow">Principios</span>
+    <h2 class="section-title">Nuestros valores</h2>
+    <p class="section-sub">Los valores que guían cada línea de código, cada decisión y cada conversación con nuestros clientes.</p>
+
+    <div class="grid-4">
+      <div class="feature-card">
+        <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="5"></circle><circle cx="12" cy="12" r="1"></circle></svg></span>
+        <h3>Calidad</h3>
+        <p>Entregamos soluciones que cumplen los más altos estándares de desarrollo.</p>
+      </div>
+      <div class="feature-card">
+        <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg></span>
+        <h3>Comunicación</h3>
+        <p>Mantenemos un diálogo constante, claro y transparente con nuestros clientes.</p>
+      </div>
+      <div class="feature-card">
+        <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 12l10 10 10-10Z"></path></svg></span>
+        <h3>Compromiso</h3>
+        <p>Nos involucramos a fondo en cada proyecto hasta lograr los objetivos planteados.</p>
+      </div>
+      <div class="feature-card">
+        <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 20h20L12 3Z"></path><path d="M12 10v4M12 17h.01"></path></svg></span>
+        <h3>Innovación</h3>
+        <p>Exploramos tecnologías apropiadas con visión de futuro.</p>
+      </div>
+    </div>
+
+    <div class="grid-3">
+      <div class="value-card-small">
+        <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle></svg></span>
+        <div><h3>Ética</h3><p>Actuamos con integridad en cada decisión que tomamos.</p></div>
+      </div>
+      <div class="value-card-small">
+        <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg></span>
+        <div><h3>Puntualidad</h3><p>Cumplimos los tiempos acordados con nuestros clientes.</p></div>
+      </div>
+      <div class="value-card-small">
+        <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 11 4.5-2.5 8-6 8-11V5l-8-3Z"></path></svg></span>
+        <div><h3>Responsabilidad</h3><p>Asumimos con seriedad las tareas que nos encomiendan.</p></div>
+      </div>
+      <div class="value-card-small">
+        <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7Z"></path><circle cx="12" cy="12" r="3"></circle></svg></span>
+        <div><h3>Respeto</h3><p>Valoramos las perspectivas de cada persona con quien trabajamos.</p></div>
+      </div>
+      <div class="value-card-small">
+        <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"></rect></svg></span>
+        <div><h3>Honestidad</h3><p>Decimos la verdad y actuamos con transparencia en todo momento.</p></div>
+      </div>
+      <div class="value-card-small">
+        <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"></circle><circle cx="17" cy="9" r="2.5"></circle><path d="M2 20c0-3.3 3-6 7-6s7 2.7 7 6"></path><path d="M15.5 14.2c2.6.4 4.5 2.4 4.5 5.3"></path></svg></span>
+        <div><h3>Trabajo en equipo</h3><p>Colaboramos de manera sinérgica para alcanzar resultados superiores.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POR QUE DYNACODE -->
+<section class="why-section">
+  <div class="wrap">
+    <div class="center" style="max-width:560px;">
+      <span class="eyebrow">Nuestra propuesta</span>
+      <h2 class="section-title">¿Por qué DYNACODE?</h2>
+      <p class="section-sub center">Más que código — entregamos compromiso, claridad y resultados.</p>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="icon-num">
+          <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5Z"></path><path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path></svg></span>
+          <span class="num">01</span>
+        </div>
+        <h3>Adaptabilidad</h3>
+        <p>Nos moldeamos a las necesidades, contextos y recursos de cada cliente. No hay solución única — hay la solución correcta para ti.</p>
+      </div>
+      <div class="why-item">
+        <div class="icon-num">
+          <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9 12 2"></polygon></svg></span>
+          <span class="num">02</span>
+        </div>
+        <h3>Calidad</h3>
+        <p>Trabajamos con buenas prácticas de desarrollo — código limpio, pruebas, revisiones y arquitecturas pensadas para crecer.</p>
+      </div>
+      <div class="why-item">
+        <div class="icon-num">
+          <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z"></path></svg></span>
+          <span class="num">03</span>
+        </div>
+        <h3>Comunicación</h3>
+        <p>Mantenemos comunicación constante y transparente. Sabrás siempre en qué estamos, qué decidimos y por qué.</p>
+      </div>
+      <div class="why-item">
+        <div class="icon-num">
+          <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8Z"></path></svg></span>
+          <span class="num">04</span>
+        </div>
+        <h3>Innovación</h3>
+        <p>Buscamos incorporar tecnologías apropiadas y enfoques modernos para construir soluciones con visión de futuro.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="section bg-1" id="contacto">
+  <div class="wrap">
+    <span class="eyebrow">Conversemos</span>
+    <h2 class="section-title">Hablemos de tu idea</h2>
+    <p class="section-sub">¿Tienes una idea o una necesidad tecnológica? Cuéntanos y trabajemos juntos para convertirla en una solución.</p>
+
+    <div class="contact-grid">
+      <div class="form-card">
+        <div class="form-row">
+          <div class="field">
+            <label>Nombre completo <span class="req">*</span></label>
+            <input type="text" placeholder="Tu nombre">
+          </div>
+          <div class="field">
+            <label>Correo electrónico <span class="req">*</span></label>
+            <input type="email" placeholder="correo@empresa.com">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label>Teléfono</label>
+            <input type="text" placeholder="+57 300 000 0000">
+          </div>
+          <div class="field">
+            <label>Empresa</label>
+            <input type="text" placeholder="Nombre de tu empresa">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field full">
+            <label>Tipo de proyecto <span class="req">*</span></label>
+            <select>
+              <option>Selecciona una opción...</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field full">
+            <label>Mensaje <span class="req">*</span></label>
+            <textarea placeholder="Cuéntanos sobre tu proyecto o necesidad..."></textarea>
+          </div>
+        </div>
+        <label class="checkbox-row">
+          <input type="checkbox">
+          <span>Autorizo el tratamiento de mis datos personales para recibir respuesta a mi solicitud.</span>
+        </label>
+        <button class="submit-btn">Enviar mensaje</button>
+      </div>
+
+      <div class="contact-side">
+        <div class="envelope-art">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m2 6 10 8 10-8"></path></svg>
+        </div>
+        <div class="contact-info">
+          <h3>Información de contacto</h3>
+          <div class="info-line">
+            <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m2 6 10 8 10-8"></path></svg></span>
+            <div><div class="lbl">Email</div><div class="val">contacto@dynacode.co</div></div>
+          </div>
+          <div class="info-line">
+            <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.4 2.1L8.1 9.6a16 16 0 0 0 6 6l1.1-1.2a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2Z"></path></svg></span>
+            <div><div class="lbl">Teléfono</div><div class="val">+57 300 000 0000</div></div>
+          </div>
+          <div class="info-line">
+            <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg></span>
+            <div><div class="lbl">Ubicación</div><div class="val">Colombia</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo"><span class="mark">DC</span> DYNACODE</div>
+        <p class="footer-tag">"Transformando ideas en código."</p>
+        <div class="social-row">
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4V8h4v1.5A5 5 0 0 1 16 8Z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+          <a href="#" aria-label="Favoritos"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"></path></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1"></circle></svg></a>
+          <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l16 16M20 4 4 20"></path></svg></a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Navegación</h4>
+        <ul class="footer-nav">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#soluciones">Soluciones</a></li>
+          <li><a href="#valores">Valores</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Dynacode</h4>
+        <p class="footer-desc">Grupo emprendedor colombiano orientado al desarrollo de soluciones de software que generan valor real para personas y empresas.</p>
+        <a href="#contacto" class="footer-cta">Cuéntanos tu idea →</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 DYNACODE. Todos los derechos reservados.</span>
+      <span>Transformando ideas en código</span>
+    </div>
+  </div>
+</footer>
+
+<!-- JS modular: scripts clásicos (no type="module") para que funcione
+     tanto con doble clic (file://) como sirviéndolo desde un servidor.
+     El orden importa: theme.js primero, main.js lo consume después. -->
+<script src="js/theme.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

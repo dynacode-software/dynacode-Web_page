@@ -1,0 +1,56 @@
+/* ==========================================================================
+   Variables globales y tokens de tema (claro / oscuro)
+   ========================================================================== */
+
+:root {
+  --blue: #3B7CF6;
+  --blue-strong: #2E68DC;
+  --blue-soft: #EAF0FF;
+
+  --radius-s: 10px;
+  --radius-m: 16px;
+  --radius-l: 22px;
+
+  --maxw: 1180px;
+
+  --ff-head: 'Plus Jakarta Sans', sans-serif;
+  --ff-body: 'Inter', sans-serif;
+}
+
+/* Tema oscuro (por defecto) */
+html[data-theme="dark"] {
+  --bg-0: #080B1A;
+  --bg-1: #0B1024;
+  --bg-2: #0F1530;
+  --bg-3: #131A3A;
+  --card: #121938;
+  --card-2: #10162E;
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.14);
+  --text-1: #F4F6FF;
+  --text-2: #A7AFD1;
+  --text-3: #757EA3;
+  --shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+  --mockup-line: rgba(255, 255, 255, 0.14);
+  --mockup-bg: #171E42;
+  color-scheme: dark;
+}
+
+/* Tema claro */
+html[data-theme="light"] {
+  --bg-0: #F3F6FF;
+  --bg-1: #FFFFFF;
+  --bg-2: #EAF0FF;
+  --bg-3: #EAF0FF;
+  --card: #FFFFFF;
+  --card-2: #FFFFFF;
+  --border: rgba(16, 22, 58, 0.08);
+  --border-strong: rgba(16, 22, 58, 0.14);
+  --text-1: #10163A;
+  --text-2: #5B6288;
+  --text-3: #8992B8;
+  --shadow: 0 20px 50px rgba(30, 45, 110, 0.08);
+  --mockup-line: rgba(16, 22, 58, 0.12);
+  --mockup-bg: #FFFFFF;
+  color-scheme: light;
+}

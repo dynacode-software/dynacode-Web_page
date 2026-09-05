@@ -1,0 +1,298 @@
+/* ==========================================================================
+   Componentes reutilizables
+   ========================================================================== */
+
+/* --- Botón de cambio de tema --- */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1px solid var(--border-strong);
+  background: var(--card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+.theme-toggle:hover { transform: translateY(-2px); }
+.theme-toggle svg { width: 20px; height: 20px; stroke: var(--text-1); }
+.theme-toggle .sun { display: none; }
+html[data-theme="dark"] .theme-toggle .moon { display: block; }
+html[data-theme="light"] .theme-toggle .sun { display: block; }
+html[data-theme="light"] .theme-toggle .moon { display: none; }
+
+/* --- Botones --- */
+.btn {
+  padding: 13px 26px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 14.5px;
+  border: 1px solid transparent;
+  transition: transform 0.15s ease, background 0.2s ease, border-color 0.2s ease;
+}
+.btn:hover { transform: translateY(-1px); }
+.btn-primary { background: var(--blue); color: #fff; }
+.btn-primary:hover { background: var(--blue-strong); }
+.btn-ghost { background: transparent; color: var(--text-1); border-color: var(--border-strong); }
+
+/* --- Insignias de icono --- */
+.icon-badge {
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  background: var(--bg-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.icon-badge svg { width: 17px; height: 17px; stroke: var(--blue); }
+
+/* --- Tarjeta de mockup de navegador (hero / quiénes somos) --- */
+.browser-card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 380px;
+  background: var(--mockup-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-m);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.browser-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border);
+}
+.dot { width: 8px; height: 8px; border-radius: 50%; }
+.dot.r { background: #F16E6E; }
+.dot.y { background: #F5C451; }
+.dot.g { background: #59C97C; }
+
+.browser-body { padding: 20px; position: relative; }
+.line { height: 8px; border-radius: 5px; background: var(--mockup-line); margin-bottom: 10px; }
+.line.w1 { width: 65%; }
+.line.w2 { width: 90%; }
+.line.w3 { width: 45%; }
+.line.w4 { width: 75%; }
+
+.check-pill {
+  position: absolute;
+  top: -18px;
+  right: -18px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-s);
+  padding: 8px 12px;
+  box-shadow: var(--shadow);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.check-pill svg { width: 16px; height: 16px; stroke: #59C97C; }
+
+.tag-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 12px;
+  color: var(--text-2);
+  margin-top: 6px;
+}
+.tag-pill svg { width: 12px; height: 12px; stroke: var(--text-3); }
+
+.bottom-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+  background: var(--bg-2);
+  border-radius: var(--radius-s);
+  padding: 10px 12px;
+}
+.bottom-bar .track { flex: 1; height: 8px; border-radius: 5px; background: var(--mockup-line); }
+.bottom-bar .knob { width: 28px; height: 22px; border-radius: 7px; background: var(--blue); }
+
+.dot-grid {
+  position: absolute;
+  bottom: -24px;
+  left: -10px;
+  width: 70px;
+  height: 40px;
+  background-image: radial-gradient(var(--border-strong) 1.4px, transparent 1.4px);
+  background-size: 10px 10px;
+  z-index: 0;
+}
+
+.chat-bubble {
+  position: absolute;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 10px 14px;
+  box-shadow: var(--shadow);
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.chat-bubble .avatar { width: 20px; height: 20px; border-radius: 50%; background: var(--blue); flex-shrink: 0; }
+
+.input-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg-2);
+  border-radius: var(--radius-s);
+  padding: 12px 14px;
+  margin-top: 16px;
+}
+.input-row .track { flex: 1; height: 8px; border-radius: 5px; background: var(--mockup-line); }
+
+.round-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.round-btn svg { width: 14px; height: 14px; stroke: #fff; }
+
+/* --- Tarjetas de contenido (misión/visión, features, valores) --- */
+.info-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-m);
+  padding: 22px 24px;
+  margin-bottom: 16px;
+}
+.info-card-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--ff-head);
+  font-weight: 700;
+  font-size: 15.5px;
+  margin-bottom: 10px;
+}
+.info-card p { color: var(--text-2); font-size: 14px; line-height: 1.65; margin: 0; }
+
+.feature-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-m);
+  padding: 26px 24px;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+.feature-card:hover { border-color: var(--border-strong); transform: translateY(-3px); }
+.feature-card .icon-badge { margin-bottom: 18px; }
+.feature-card h3 { font-size: 16px; font-weight: 700; margin-bottom: 10px; }
+.feature-card p { color: var(--text-2); font-size: 14px; line-height: 1.65; margin: 0; }
+
+.value-card-small {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-m);
+  padding: 20px 22px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+.value-card-small .icon-badge { width: 30px; height: 30px; border-radius: 8px; }
+.value-card-small .icon-badge svg { width: 14px; height: 14px; }
+.value-card-small h3 { font-size: 14.5px; font-weight: 700; margin-bottom: 4px; }
+.value-card-small p { color: var(--text-2); font-size: 13px; line-height: 1.55; margin: 0; }
+
+/* --- Formulario de contacto --- */
+.form-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-l);
+  padding: 34px;
+}
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+.field { display: flex; flex-direction: column; gap: 8px; }
+.field.full { grid-column: 1 / -1; }
+.field label { font-size: 13px; font-weight: 600; color: var(--text-1); }
+.field label .req { color: var(--blue); }
+.field input,
+.field select,
+.field textarea {
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 14px;
+  color: var(--text-1);
+  font-family: inherit;
+}
+.field input::placeholder,
+.field textarea::placeholder { color: var(--text-3); }
+.field textarea { resize: none; height: 96px; }
+
+.checkbox-row { display: flex; align-items: flex-start; gap: 10px; margin: 6px 0 22px; }
+.checkbox-row input { margin-top: 3px; }
+.checkbox-row span { font-size: 12.5px; color: var(--text-2); line-height: 1.5; }
+
+.submit-btn {
+  width: 100%;
+  background: var(--blue);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 14px;
+  font-weight: 700;
+  font-size: 14.5px;
+}
+.submit-btn:hover { background: var(--blue-strong); }
+
+.envelope-art {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-l);
+  height: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 26px;
+  position: relative;
+  overflow: hidden;
+}
+.envelope-art svg { width: 64px; height: 64px; stroke: var(--blue); position: relative; }
+.envelope-art::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--bg-2);
+  opacity: 0.5;
+  clip-path: polygon(0 65%, 100% 40%, 100% 100%, 0% 100%);
+}
+
+.contact-info h3 { font-size: 15px; font-weight: 700; margin-bottom: 18px; }
+.info-line { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 18px; }
+.info-line .icon-badge { width: 34px; height: 34px; }
+.info-line .lbl { font-size: 12px; color: var(--text-3); margin-bottom: 3px; }
+.info-line .val { font-size: 14px; font-weight: 600; color: var(--text-1); }

@@ -1,0 +1,110 @@
+/* ==========================================================================
+   Reset y estilos base
+   ========================================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--ff-body);
+  background: var(--bg-0);
+  color: var(--text-1);
+  transition: background 0.35s ease, color 0.35s ease;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+svg {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3 {
+  font-family: var(--ff-head);
+  margin: 0;
+  color: var(--text-1);
+}
+
+/* Utilidades de layout compartidas */
+.wrap {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  padding: 88px 0;
+}
+
+.bg-0 { background: var(--bg-0); }
+.bg-1 { background: var(--bg-1); }
+.bg-2 { background: var(--bg-2); }
+
+/* Tipografía compartida entre secciones */
+.eyebrow {
+  display: inline-block;
+  font-family: var(--ff-body);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--blue);
+  margin-bottom: 14px;
+}
+
+.section-title {
+  font-size: clamp(28px, 3.6vw, 38px);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.section-sub {
+  color: var(--text-2);
+  font-size: 15.5px;
+  line-height: 1.65;
+  max-width: 560px;
+}
+
+/* Accesibilidad: foco visible en cualquier elemento interactivo */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
